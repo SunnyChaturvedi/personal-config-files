@@ -17,3 +17,7 @@ go install -ldflags="-s -w" github.com/gokcehan/lf
 ```
 https://github.com/p0deje/Maccy
 ```
+
+
+### $PS1 cheatsheet (do `echo $PS1` to see yours)
+ ![alt text](https://github.com/SunnyChaturvedi/personal-config-files/blob/main/PS1-codes-syntax-meaning.png)
