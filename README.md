@@ -19,6 +19,12 @@ go install -ldflags="-s -w" github.com/gokcehan/lf
 https://github.com/p0deje/Maccy
 ```
 
+- fzf
+
+```
+https://github.com/junegunn/fzf
+```
+the author (_Junegunn Choi_) of fzf is a kickass person, has contributed a lot in dev utility area, some cool things by him - [vim-plug](https://github.com/junegunn/vim-plug), [fzf.vim](https://github.com/junegunn/fzf.vim)
 
 ---------------------------------------------------------------
 ### $PS1 cheatsheet (do `echo $PS1` to see yours)
