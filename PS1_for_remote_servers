@@ -2,4 +2,7 @@ PS1='\[\e[0;32m\]\h\[\e[m\]:\[\e[0;36m\]\w\[\e[m\]\$'
 
 alternative with date added : 
 PS1="$(clock_prompt)$python_ven\[\e[0;36m\]\D{%a %b %d} \[\e[0;32m\]\h\[\e[m\]:\[\e[0;36m\]\w\[\e[m\]\$ "
-#this is using font theme of ohmyzsh , you can remove the envt variables clock and python_env
+#this is using font theme of ohmyzsh , you can remove the envt variables clock and python_env, and add %T in \D function
+
+~$ export PS1="\[\e[0;36m\]\D{%a %b %d %T} \[\e[0;32m\]\h\[\e[m\]:\[\e[0;36m\]\w\[\e[m\]\$ "
+Thu Nov 21 10:41:02 ip-172-31-10-6:~$ PS1="\[\e[0;36m\]\D{%a %b %d} \[\e[0;32m\]\h\[\e[m\]:\[\e[0;36m\]\w\[\e[m\]\$ "
