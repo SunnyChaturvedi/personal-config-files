@@ -1,1 +1,4 @@
 PS1='\[\e[0;32m\]\h\[\e[m\]:\[\e[0;36m\]\w\[\e[m\]\$'
+
+alternative with date added : 
+PS1="\[\e[0;36m\]\D{%a %b %d}\[\e[m\]:\[\e[0;36m\]\w\[\e[m\] \[\e[0;32m\]\h\[\e[m\]\$ "
