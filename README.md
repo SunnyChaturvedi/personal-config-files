@@ -38,14 +38,14 @@ Read more about $PS1 customization at - [Link](https://github.com/SunnyChaturved
 ---------------------------------------------------------------
 ### about /var/mail/
 
-your output of crons is store in a single file here, usually the files name is your username
+your output of crons is stored in a single file at `/var/mail/`, usually the file name is your username
 
 you can edit
 ```
 /etc/mail.rc
 ```
 
-to alter setttings
+to alter settings
 ```
 ~ ❯ cat /etc/mail.rc
 set append dot save ask crt
