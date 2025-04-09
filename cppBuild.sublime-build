@@ -27,6 +27,7 @@
 
 
 // create a exe file in another folder(named executables)in same directory, (that folder is also created)
+// carefull with the parenthesis, took a lot of time to debug, if you are combining filenames using variables then / is used other wise backslash \ 
 {
     "cmd": [
         "cmd", "/c",
