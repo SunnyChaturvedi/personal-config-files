@@ -1,0 +1,44 @@
+// create executable and remove it after executing once.
+{
+    "cmd": [
+        "cmd", "/c",
+        "C:\\MinGW\\bin\\g++.exe", "-std=c++17", "${file}", "-o", "${file_base_name}.exe", 
+        "&&",
+        "${file_base_name}.exe", "<", "C:\\Users\\Sunny\\Documents\\Coding BUildup\\inputf.in", ">", "C:\\Users\\Sunny\\Documents\\Coding BUildup\\outputf1.in",
+        "&&",
+        "del", "${file_base_name}.exe"
+    ],
+    "shell": true,
+    "working_dir": "${file_path}",
+    "selector": "source.cpp"
+}
+
+
+// create exe file in same folder and dont delete it (bloats the folder as with cpp files, exe files also grow)
+{
+    "cmd": [
+        "cmd", "/c",
+        "C:\\MinGW\\bin\\g++.exe", "-std=c++17", "${file}", "-o", "${file_base_name}.exe", "&&",
+        "${file_base_name}.exe", "<", "C:\\Users\\Sunny\\Documents\\Coding BUildup\\inputf.in", ">", "C:\\Users\\Sunny\\Documents\\Coding BUildup\\outputf1.in"
+    ],
+    "shell": true,
+    "working_dir": "${file_path}",
+    "selector": "source.cpp"
+}
+
+
+// create a exe file in another folder(named executables)in same directory, (that folder is also created)
+{
+    "cmd": [
+        "cmd", "/c",
+        "if not exist executables mkdir executables",
+        "&&",
+        "C:\\MinGW\\bin\\g++.exe", "-std=c++17", "${file}", "-o", "${file_path}/executables/${file_base_name}.exe", "&&",
+        "${file_path}/executables/${file_base_name}.exe", "<", "C:\\Users\\Sunny\\Documents\\Coding BUildup\\inputf.in", ">", "C:\\Users\\Sunny\\Documents\\Coding BUildup\\outputf1.in"
+    ],
+    "shell": true,
+    "working_dir": "${file_path}",
+    "selector": "source.cpp"
+}
+
+
