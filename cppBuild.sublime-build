@@ -13,7 +13,6 @@
     "selector": "source.cpp"
 }
 
-
 // create exe file in same folder and dont delete it (bloats the folder as with cpp files, exe files also grow)
 {
     "cmd": [
